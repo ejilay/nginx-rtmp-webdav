@@ -1,7 +1,8 @@
 FROM alpine:latest
 MAINTAINER Jason Rivers <docker@jasonrivers.co.uk>
 
-ENV NGINX_VERSION 1.9.15
+# https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/issues/127
+ENV NGINX_VERSION 1.9.10
 
 RUN	apk update		&&	\
 	apk add				\
