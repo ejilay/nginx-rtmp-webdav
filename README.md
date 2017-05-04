@@ -31,8 +31,10 @@ Play Path/Stream Key: mystream
 ### Watching the steam
 
 In your favorite RTMP video player connect to the stream using the URL:
+```
 rtmp://<your server ip>/live/mystream
 http://<your server ip>/hls/mystream.m3u8
+```
 
 ### Tested players
  * VLC
