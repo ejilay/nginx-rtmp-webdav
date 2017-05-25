@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Jason Rivers <docker@jasonrivers.co.uk>
+MAINTAINER Ilya Baturin <ivbaturin@gmail.com>
 
 # https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/issues/127
 ENV NGINX_VERSION 1.9.10
@@ -44,6 +44,7 @@ RUN	cd /tmp										&&	\
 	./configure										\
 		--prefix=/opt/nginx								\
 		--with-http_ssl_module								\
+		--with-http_dav_module								\
 		--add-module=../nginx-rtmp-module					&&	\
 	make										&&	\
 	make install

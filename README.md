@@ -1,5 +1,5 @@
-# Docker-nginx-rtmp
-Docker image for an RTMP/HLS server running on nginx
+# nginx-rtmp-webdav
+Docker image for an RTMP/HLS server running on nginx with webdav support
 
 NGINX Version 1.9.10
 nginx-rtmp-module Version 1.1.7
@@ -17,7 +17,7 @@ The configuration file is in /opt/nginx/conf/
 
 To run the container and bind the port 1935 to the host machine; run the following:
 ```
-docker run -p 1935:1935 -p 8080:8080 ejilay/nginx-rtmp
+docker run -p 1935:1935 -p 8080:8080 ejilay/nginx-rtmp-webdav
 ```
 
 ### OBS Configuration
